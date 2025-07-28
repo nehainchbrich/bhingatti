@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    overflow-x: hidden;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -515,10 +517,8 @@ body {
 }
 
 .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 2rem;
+    display: none;
+
 }
 
 .indicator {
@@ -720,7 +720,7 @@ body {
   @media (max-width: 992px) {
     .contact-modern-wrapper {
       grid-template-columns: 1fr;
-      padding: 40px;
+      /* padding: 40px; */
     }
   
     .contact-modern-image {
@@ -1032,12 +1032,22 @@ body {
     .header-content {
         gap: 1rem;
     }
+    .footer small{
+        padding-bottom: 5rem;
+    }
+    .stat-card{
+        padding: 1rem;
+    }
     .logo img{
         width: 150px;
     }
     .footer-phone{
         display:flex;
         justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-top: 1rem;
     }
     .footer-phone a{
         background-color: #005dc0;
