@@ -27,7 +27,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 99999999;
+    z-index: 1000;
     transition: all 0.3s ease;
 }
 
