@@ -27,7 +27,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 99999999;
     transition: all 0.3s ease;
 }
 
@@ -1047,6 +1047,7 @@ body {
         position: fixed;
         bottom: 0;
         width: 100%;
+        z-index: 99999999;
         padding-top: 1rem;
     }
     .footer-phone a{
@@ -1062,8 +1063,8 @@ body {
         height: 123vh;
     }
     .stat-card{
-        max-width:49%;
-        min-width:49%;
+        max-width:47%;
+        min-width:47%;
     }
     .stats-grid{
         display: ruby;
