@@ -239,6 +239,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('loaded');
 });
 
+
+// mobile carousel
+
+
 // Add some utility functions
 function debounce(func, wait) {
     let timeout;
