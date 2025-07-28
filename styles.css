@@ -447,7 +447,9 @@ body {
     position: relative;
     overflow: hidden;
 }
-
+.property-image img{
+    width:100%;
+}
 .property-image::before {
     content: '';
     position: absolute;
@@ -730,6 +732,7 @@ body {
 /* Footer */
 .footer {
     padding: 40px 0 20px;
+    background: #121212;
 }
 
 .footer-content {
@@ -773,7 +776,7 @@ body {
 
 .footer-bottom {
     text-align: center;
-    color: #bdc3c7;
+    color: #a9a6a6;
 }
 
 /* Floating Chat Option */
@@ -976,7 +979,7 @@ body {
     
     /* Mobile Floating Chat Adjustments */
     .floating-chat {
-        bottom: 20px;
+        bottom: 51px;
         right: 20px;
     }
     
@@ -1012,10 +1015,25 @@ body {
         padding: 10px;
     }
 }
-
+.footer-phone{
+    display: none;
+}
 @media (max-width: 480px) {
     .header-content {
         gap: 1rem;
+    }
+    .footer-phone{
+        display:flex;
+        justify-content: space-between;
+    }
+    .footer-phone a{
+        background-color: #005dc0;
+        padding: 1rem;
+        color: #fff;
+        width: 100%;
+        border-right: 1px solid;
+        text-align: center;
+        text-decoration: none;
     }
     .location-hero-image{
         height: 123vh;
