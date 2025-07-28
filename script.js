@@ -260,3 +260,16 @@ function debounce(func, wait) {
 window.addEventListener('resize', debounce(() => {
     // Recalculate any responsive elements if needed
 }, 250)); 
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.banner-image');
+    let current = 0;
+
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 4000); // 4 seconds
+  });
