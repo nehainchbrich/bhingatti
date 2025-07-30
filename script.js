@@ -1,3 +1,57 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const track = document.getElementById('propertyCarousel');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  let currentIndex = 0;
+
+  function getSlidesPerView() {
+    return window.innerWidth <= 768 ? 1 : 3;
+  }
+
+  function updateCarousel() {
+    const slideWidth = slides[0].offsetWidth;
+    const slidesPerView = getSlidesPerView();
+    const totalGroups = Math.ceil(slides.length / slidesPerView);
+    const offset = currentIndex * slideWidth * slidesPerView;
+    track.style.transform = `translateX(-${offset}px)`;
+  }
+
+  function goToNextSlide() {
+    const slidesPerView = getSlidesPerView();
+    const totalGroups = Math.ceil(slides.length / slidesPerView);
+
+    currentIndex++;
+    if (currentIndex >= totalGroups) {
+      currentIndex = 0; // loop to start
+    }
+    updateCarousel();
+  }
+
+  function goToPrevSlide() {
+    const slidesPerView = getSlidesPerView();
+    const totalGroups = Math.ceil(slides.length / slidesPerView);
+
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = totalGroups - 1; // loop to end
+    }
+    updateCarousel();
+  }
+
+  nextBtn.addEventListener('click', goToNextSlide);
+  prevBtn.addEventListener('click', goToPrevSlide);
+  window.addEventListener('resize', updateCarousel);
+
+  // Auto-play loop
+  setInterval(goToNextSlide, 5000);
+
+  updateCarousel();
+});
+
+
+
 // Custom Carousel Functionality
 class CustomCarousel {
     constructor(containerId) {

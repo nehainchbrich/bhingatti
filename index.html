@@ -53,7 +53,7 @@
                 </div>
                 <div class="unit-card-banner">
                     <p class="payment">Easy Payment Plan</p>
-                    <p class="price">Only 1% per month</p>
+                    <p class="price">1% per month</p>
                 </div>
             </div>
         </div>
@@ -144,103 +144,107 @@
         </div>
     </section>
 
-    <!-- Featured Properties Carousel -->
-    <section class="carousel-section" id="carousel-section">
-        <div class="container">
-            <h2 class="section-title">Take the First Step Towards Smart Property Investment</h2>
-            <p class="carousel-section-subtext">Access expert guidance and curated options to find your perfect fit.
-            </p>
-            <div class="carousel-wrapper">
-                <div class="carousel-track" id="propertyCarousel">
-                    <div class="carousel-slide active">
-                        <div class="property-grid">
-                            <div class="property-card">
-                                <div class="property-image">
-                                    <img src="images/Residences Chelsea.png">
-                                </div>
-                                <div class="property-content">
-                                    <h5>Chelsea Residences 
-                                    </h5>
-                                    <p>1‑ to 3‑bedroom sea‑view apartments</p>
-                                    <h6 class="price">Dubai Maritime City</h6>
-                                </div>
-                            </div>
-                            <div class="property-card">
-                                <div class="property-image">
-                                    <img src="images/Safa Two.png">
-                                </div>
-                                <div class="property-content">
-                                    <h5>Safa Two</h5>
-                                    <p>Studio,1,2 & 3 BR Apartments</p>
-                                    <h6 class="price">Sheikh Zayed Road</h6>
-                                </div>
-                            </div>
-                            <div class="property-card">
-                                <div class="property-image">
-                                    <img src="images/riverside views.png">
-                                </div>
-                                <div class="property-content">
-                                    <h5>Riverside Views</h5>
-                                    <p>1- and 2‑bedroom apartments | 4 & 5 Bedroom townhouses</p>
-                                    <h6 class="price">Dubai investment Park 2</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 
-                    <div class="carousel-slide">
-                        <div class="property-grid">
-                            <div class="property-card">
-                                <div class="property-image">
-                                    <img src="images/GOLF GREENS.png">
-                                </div>
-                                <div class="property-content">
-                                    <h5>Golf Greens                                    </h5>
-                                    <p>1 & 2 bedroom apartments | 2 & 3 bedroom townhouses                                    </p>
-                                    <h6 class="price">Damac Hills</h6>
-                                </div>
-                            </div>
-                         
-                            <div class="property-card">
-                                <div class="property-image">
-                                    <img src="images/Canal Heights 2.png">
-                                </div>
-                                <div class="property-content">
-                                    <h5>Canal Heights 2 
-                                    </h5>
-                                    <p>1 & 2 Bedroom apartment | 3 & 4 Bedroom duplexes</p>
-                                    <h6 class="price">Business Bay</h6>
-                                </div>
-                            </div>
-                            <div class="property-card">
-                                <div class="property-image">
-                                    <img src="images/damac island.png">
-                                </div>
-                                <div class="property-content">
-                                    <h5>Damac Island </h5>
-                                    <p>4 & 5-Bedroom townhouses | 5, 6, & 7-Bedroom luxury villas
-                                    </p>
-                                    <h6 class="price">Dubai land</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 
+
+    <!-- carousel -->
+     <div class="container">
+    <div class="carousel-wrapper">
+        <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+      
+        <div class="carousel-track" id="propertyCarousel">
+          <div class="carousel-slide">
+            <div class="property-card">
+              <div class="property-image">
+                <img src="images/Residences Chelsea.png" />
+              </div>
+              <div class="property-content">
+                <h5>Chelsea Residences</h5>
+                <p>1‑ to 3‑bedroom sea‑view apartments</p>
+                <h6 class="price">Dubai Maritime City</h6>
+                <button class="submit-modern-btn" onclick="openModal()" type="button">Download Brochure</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/Safa Two.png">
                 </div>
-                <button class="carousel-btn prev" id="prevBtn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-btn next" id="nextBtn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="carousel-indicators" id="carouselIndicators">
-                    <span class="indicator active" data-slide="0"></span>
-                    <span class="indicator" data-slide="1"></span>
-                    <span class="indicator" data-slide="2"></span>
+                <div class="property-content">
+                    <h5>Safa Two</h5>
+                    <p>Studio,1,2 & 3 BR Apartments</p>
+                    <h6 class="price">Sheikh Zayed Road</h6>
+                <button class="submit-modern-btn" onclick="openModal()" type="button">Download Brochure</button>
+
                 </div>
             </div>
+          </div>
+          <div class="carousel-slide">
+            
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/riverside views.png">
+                </div>
+                <div class="property-content">
+                    <h5>Riverside Views</h5>
+                    <p>1- and 2‑bedroom apartments | 4 & 5 Bedroom townhouses</p>
+                    <h6 class="price">Dubai investment Park 2</h6>
+                <button class="submit-modern-btn" onclick="openModal()" type="button">Download Brochure</button>
+
+                </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/GOLF GREENS.png">
+                </div>
+                <div class="property-content">
+                    <h5>Golf Greens                                    </h5>
+                    <p>1 & 2 bedroom apartments | 2 & 3 bedroom townhouses                                    </p>
+                    <h6 class="price">Damac Hills</h6>
+                <button class="submit-modern-btn" onclick="openModal()" type="button">Download Brochure</button>
+
+                </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/Canal Heights 2.png">
+                </div>
+                <div class="property-content">
+                    <h5>Canal Heights 2 
+                    </h5>
+                    <p>1 & 2 Bedroom apartment | 3 & 4 Bedroom duplexes</p>
+                    <h6 class="price">Business Bay</h6>
+                <button class="submit-modern-btn" onclick="openModal()" type="button">Download Brochure</button>
+
+                </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/damac island.png">
+                </div>
+                <div class="property-content">
+                    <h5>Damac Island </h5>
+                    <p>4 & 5-Bedroom townhouses | 5, 6, & 7-Bedroom luxury villas
+                    </p>
+                    <h6 class="price">Dubai land</h6>
+                <button class="submit-modern-btn" onclick="openModal()" type="button">Download Brochure</button>
+
+                </div>
+            </div>
+          </div>
+
+          <!-- Repeat .carousel-slide for other properties -->
         </div>
-    </section>
+      
+        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+      </div>
+    </div>
+
 
     <!-- Location Section -->
 
@@ -293,13 +297,8 @@
                   </div>
                   
                   <div class="form-floating">
-                    <select class="form-input" required>
-                      <option value="" disabled selected>City</option>
-                      <option>Studio</option>
-                      <option>1 Bedroom</option>
-                      <option>2 Bedroom</option>
-                    </select>
-                    <label>Unit Type</label>
+                    <input type="text" class="form-input" placeholder="City" required>
+                    <label>City</label>
                   </div>
                   <button type="submit" class="submit-modern-btn">Request a call back</button>
                 </form>
@@ -350,7 +349,7 @@
 
     <!-- Floating Chat Option -->
     <div class="floating-chat" id="floatingChat">
-        <div class="chat-button" id="chatButton">
+        <div class="chat-button" id="chatButton" >
             <i class="fas fa-comments"></i>
             <span>Enquiry Now</span>
         </div>
@@ -370,19 +369,15 @@
                 </div>
                 
                 <div class="form-group">
-                    <select class="form-control">
-                        <option>Select City</option>
-                        <option>Delhi</option>
-                        <option>1 Bedroom</option>
-                        <option>2 Bedroom</option>
-                    </select>
+                    <input type="text" class="form-control" placeholder="City" required>
+               
                 </div>
                 <button type="submit" class="submit-btn">Register Now</button>
             </form>
         </div>
     </div>
 <div class="footer-phone">
-    <a href="">Enquiry Now</a>
+    <a onclick="openModal()">Enquiry Now</a>
     <a href="">Tap to call</a>
 </div>
 <!-- Enquiry Modal -->
@@ -404,13 +399,8 @@
           <label>Email Address</label>
         </div>
         <div class="form-floating">
-          <select class="form-input" required>
-            <option value="" disabled selected>City</option>
-            <option>Studio</option>
-            <option>1 Bedroom</option>
-            <option>2 Bedroom</option>
-          </select>
-          <label>Unit Type</label>
+            <input type="text" class="form-input" placeholder="City" required>
+            <label>City</label>
         </div>
         <button type="submit" class="submit-modern-btn">Submit Enquiry</button>
       </form>
