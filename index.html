@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore premium DAMAC properties in Dubai. Easy payment plans, luxury amenities, and top locations await. Book a site visit today!">
     <title>Luxury Properties</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -17,7 +18,7 @@
                     <img class="logo2" src="images/damac inchbrick black logo.png">
                 </div>
                 <button class="call-btn">
-                    <i class="fas fa-phone"></i> Call Now
+                    <i class="fas fa-phone"></i> +918178652086
                 </button>
             </div>
         </div>
@@ -34,7 +35,7 @@
         <div class="container">
             <h1>Luxury when you want it.</h1>
             <p>Affordability when you need it</p>
-            <button class="cta-btn">Explore Properties</button>
+            <button class="cta-btn" onclick="document.getElementById('carousel-section').scrollIntoView({ behavior: 'smooth' })">Explore Properties</button>
         </div>
     </section>
 </div>
@@ -138,19 +139,19 @@
              
             </div>
             <div class="register-center">
-                <button class="register-btn">Register Your Interest</button>
+                <button class="register-btn" type="button" onclick="openModal()">Request a call Back</button>
             </div>
         </div>
     </section>
 
     <!-- Featured Properties Carousel -->
-    <section class="carousel-section">
+    <section class="carousel-section" id="carousel-section">
         <div class="container">
             <h2 class="section-title">Take the First Step Towards Smart Property Investment</h2>
             <p class="carousel-section-subtext">Access expert guidance and curated options to find your perfect fit.
             </p>
-            <div class="carousel-container">
-                <div class="carousel-wrapper" id="propertyCarousel">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="propertyCarousel">
                     <div class="carousel-slide active">
                         <div class="property-grid">
                             <div class="property-card">
@@ -186,6 +187,7 @@
                             </div>
                         </div>
                     </div>
+                 
                     <div class="carousel-slide">
                         <div class="property-grid">
                             <div class="property-card">
@@ -241,10 +243,15 @@
     </section>
 
     <!-- Location Section -->
+
     <section class="location-hero-section">
+        <div class="container">
+            <div class="d-flex">
         <div class="location-hero-image">
           <img src="images/damac-72map.jpg" alt="Downtown View">
-          <div class="location-hero-overlay">
+       
+        </div>
+        <div class="location-hero-overlay">
             <div class="location-card-content">
               <div class="location-icon"><i class="fas fa-location-dot"></i></div>
               <h2 class="location-title">Prime Locations, Premium Projects</h2>
@@ -256,8 +263,10 @@
               </ul>
             </div>
           </div>
+          </div>
         </div>
       </section>
+  
       
 
 
@@ -317,7 +326,7 @@
                 <li>✅ <strong>Limited Inventory</strong></li>
               </ul>
               <p class="cta-text">Fill in your details and our experts will contact you with exclusive opportunities in Binghatti’s latest developments.</p>
-              <a href="#contact-form" class="offer-btn">🎯 Claim This Offer Now</a>
+              <button class="offer-btn" type="button" onclick="openModal()">🎯 Claim This Offer Now</button>
             </div>
             <div class="offer-image">
               <img src="images/offers.jpg" alt="Summer Offer">
@@ -376,6 +385,38 @@
     <a href="">Enquiry Now</a>
     <a href="">Tap to call</a>
 </div>
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2>Request a Call Back</h2>
+      <form>
+        <div class="form-floating">
+          <input type="text" class="form-input" placeholder="Name" required>
+          <label>Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-input" placeholder="Phone Number" required>
+          <label>Phone Number</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-input" placeholder="Email Address" required>
+          <label>Email Address</label>
+        </div>
+        <div class="form-floating">
+          <select class="form-input" required>
+            <option value="" disabled selected>City</option>
+            <option>Studio</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedroom</option>
+          </select>
+          <label>Unit Type</label>
+        </div>
+        <button type="submit" class="submit-modern-btn">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+  
     <script src="script.js"></script>
 </body>
 </html>

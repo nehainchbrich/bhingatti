@@ -5,13 +5,47 @@
 }
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
+/* modal */
 
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-overlay.active {
+    display: flex;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
 /* Container */
 .container {
     max-width: 1200px;
@@ -249,6 +283,7 @@ body {
 }
 
 @media (max-width: 600px) {
+   
     .about-content {
         grid-template-columns: 1fr;
     }
@@ -274,7 +309,7 @@ body {
 .register-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 80px 0;
+    padding: 24px 0;
 }
 .register-section-heading {
     font-size: 42px;
@@ -355,7 +390,6 @@ body {
     background: #f8f9fa;
 }
 .unit-card-banner {
-    text-align: center;
     border-right: 1px solid #c9c9c9;
 }
 .unit-card-banner:last-child {
@@ -539,8 +573,11 @@ body {
 .location-hero-section {
     position: relative;
     overflow: hidden;
+    background: #f8f9fa;
   }
-  
+  .d-flex{
+    display: flex;
+  }
   .location-hero-image {
     position: relative;
     height: 90vh;
@@ -552,21 +589,13 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(0.65);
   }
   
   .location-hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border-radius: 18px;
     max-width: 600px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    backdrop-filter: blur(10px);
   }
   
   .location-icon {
@@ -610,7 +639,7 @@ body {
   
   @media (max-width: 768px) {
     .location-hero-overlay {
-      width: 90%;
+      width: 100%;
       padding: 30px 20px;
     }
   
@@ -620,6 +649,9 @@ body {
   
     .location-text {
       font-size: 15px;
+    }
+    .d-flex{
+        display: block;
     }
   }
   
@@ -948,6 +980,8 @@ body {
     
     .unit-grid {
         grid-template-columns: 1fr;
+        display: flex;
+                gap: 10px;
     }
     
     .feature-grid {
@@ -1024,6 +1058,9 @@ body {
         font-size: 1.4rem;
         padding: 10px;
     }
+    .contact-bg{
+        padding: 36px 20px;
+    }
 }
 .footer-phone{
     display: none;
@@ -1038,6 +1075,7 @@ body {
     .header-content {
         gap: 1rem;
     }
+    
     .banner-container{
         height:358px;
     }
@@ -1069,7 +1107,7 @@ body {
         text-decoration: none;
     }
     .location-hero-image{
-        height: 123vh;
+        height: 55vh;
     }
     .stat-card{
         max-width: 45%;
@@ -1089,13 +1127,16 @@ body {
     }
     
     .banner h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        text-align: left;
     }
-    
+    .carousel-section-subtext{
+        text-align: left;
+    }
     .feature-grid {
         grid-template-columns: 1fr;
     }
@@ -1107,7 +1148,7 @@ body {
 }
 
 .about-modern-section {
-    padding: 100px 0;
+    padding: 34px 0;
     background-color: #ffffff;
   }
   
@@ -1192,11 +1233,17 @@ body {
     }
   
     .about-modern-heading {
-      font-size: 32px;
+      font-size: 29px;
     }
   
     .about-modern-subtext {
       font-size: 16px;
+    }
+    .about-intro{
+        text-align: left;
+    }
+    .carousel-section{
+        padding: 39px 0;
     }
   }
 
@@ -1285,7 +1332,6 @@ body {
   @media (max-width: 768px) {
     .offer-content {
       flex-direction: column-reverse;
-      text-align: center;
     }
   
     .offer-btn {

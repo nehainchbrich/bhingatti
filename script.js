@@ -273,3 +273,17 @@ window.addEventListener('resize', debounce(() => {
       images[current].classList.add('active');
     }, 4000); // 4 seconds
   });
+
+
+//   modal
+
+// Modal logic
+function openModal() {
+    document.getElementById("enquiryModal").style.display = "flex";
+  }
+  function closeModal() {
+    document.getElementById("enquiryModal").style.display = "none";
+  }
+  document.getElementById("closeModal").addEventListener("click", closeModal);
+  
+  
