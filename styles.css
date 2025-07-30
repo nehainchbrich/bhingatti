@@ -997,7 +997,7 @@ body {
 
     .chat-button {
         padding: 12px 16px;
-        min-width: 150px;
+        min-width: 48px;
         font-size: 0.9rem;
     }
     
@@ -1065,11 +1065,14 @@ body {
         height: 123vh;
     }
     .stat-card{
-        max-width:47%;
-        min-width:47%;
+        max-width: 45%;
+        min-width: 45%;
+        float: left;
+        margin: .4rem;
+        margin-bottom: 10px;
     }
     .stats-grid{
-        display: ruby;
+        display: initial;
     }
     .logo{
         font-size: 1.3rem;
