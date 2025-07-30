@@ -1030,6 +1030,12 @@ body {
 .footer-phone{
     display: none;
 }
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* adjust height as needed */
+    overflow: hidden;
+  }
 @media (max-width: 480px) {
     .header-content {
         gap: 1rem;
@@ -1290,12 +1296,7 @@ body {
     }
   }
   /* banner */
-  .banner-container {
-    position: relative;
-    width: 100%;
-    height: 500px; /* adjust height as needed */
-    overflow: hidden;
-  }
+
   
   .banner-image {
     position: absolute;
