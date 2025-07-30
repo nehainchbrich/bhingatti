@@ -1034,6 +1034,9 @@ body {
     .header-content {
         gap: 1rem;
     }
+    .banner-container{
+        height:358px;
+    }
     .footer small{
         padding-bottom: 5rem;
     }
